@@ -11,9 +11,12 @@ int solution(int n) {
     while(n >= compareValue)
     {
         answer++;
-        compareValue = compareValue * (answer);
+        compareValue *= answer;
+        if( compareValue > n)
+        {
+            answer--;
+            break;
+        }
     }
-    
-    --answer;
     return answer;
 }
