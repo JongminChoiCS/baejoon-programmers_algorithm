@@ -1,4 +1,3 @@
-#include <iostream>
 #include <string>
 #include <vector>
 
@@ -12,11 +11,6 @@ int solution(int n) {
     {
         answer++;
         compareValue *= answer;
-        if( compareValue > n)
-        {
-            answer--;
-            break;
-        }
     }
-    return answer;
+    return --answer;
 }
